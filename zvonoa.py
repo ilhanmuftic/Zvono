@@ -20,7 +20,7 @@ print("Spojio se!",current_time)
 def Zvono(poruka,sad):
     myTeamsMessage.text(poruka)
     myTeamsMessage.send()
-    print('Zvoni: ',sad)
+   
 
 while True:
     now = datetime.now()
@@ -28,5 +28,6 @@ while True:
 
     for x in range(12): #U rasporedu ima 12 definisanih vremena
         if vrijeme[x] == current_time:
-            Zvono(zvono,current_time) #Salje poruku
+            Zvono(zvono) #Salje poruku
+            print('Zvoni: ',current_time)
             sleep(60) #Da ne bi poslao dva puta u minuti
