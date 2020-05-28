@@ -17,7 +17,7 @@ current_time = now.strftime("%H:%M:%S") #Uzima trenutno vrijeme
 
 print("Spojio se!",current_time)
 
-def Zvono(poruka,sad):
+def Zvono(poruka):
     myTeamsMessage.text(poruka)
     myTeamsMessage.send()
    
